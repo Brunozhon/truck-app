@@ -9,6 +9,7 @@ title: Truck App | Processing...
   var params = new URLSearchParams(location.search)
   if (params.get("type") == "pickup_truck") {
     r.innerHTML = "Processing..."
+    location.assign("pickup-truck/")
   } else {
     r.innerHTML = "Sorry, we cannot generate the interface for your truck type."
   }
