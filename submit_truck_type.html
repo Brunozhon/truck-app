@@ -1,0 +1,15 @@
+---
+layout: main
+title: Truck App | Processing...
+---
+<div id="r">
+</div>
+<script>
+  var r = document.getElementById("r")
+  var params = new URLSearchParams(location.search)
+  if (params.get("type") == "pickup_truck") {
+    r.innerHTML = "Processing..."
+  } else {
+    r.innerHTML = "Sorry, we cannot generate the interface for your truck type."
+  }
+</script>
